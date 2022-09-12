@@ -1,0 +1,43 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+            <div class="container">
+                <h1 style="text-align: center;"><strong>Reports</strong></h1>
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Aliyeripoti</th>
+                        <th scope="col">Mtapeli</th>
+                        <th scope="col">Ujumbe</th>
+                        <th scope="col">Tarehe ya Tukio</th>
+                        <th scope="col">Muda wa Tukio</th>
+                        <th scope="col">Tarehe Iliyoripotiwa</th>
+                        <th scope="col">Muda wa ripoti Kutumwa</th>
+                    </tr>
+                </thead>
+                     {% for i in ripoti %}
+
+                <tbody>
+                    <tr>
+<!--                        <th><strong>{{ Info }}</strong></th>-->
+
+
+                            <td>{{ i.reporter_id }}</td>
+                            <td>{{ i.scammer_number }}</td>
+                            <td>{{ i.contained_sms }}</td>
+                            <td>{{ i.sms_date }}</td>
+                            <td>{{ i.sms_time }}</td>
+                            <td>{{ i.date_reported }}</td>
+                            <td>{{ i.time_reported }}</td>
+
+                    </tr>
+                </tbody>
+                {% endfor %}
+            </table>
+            </div>
+
+{% endblock %}
+

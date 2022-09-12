@@ -1,0 +1,26 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="mripoti.Reports" />
+          <option value="mripoti.Stakeholders" />
+          <option value="mripoti.mripoti_tapeli_api.urls.mripoti_tapeli_api" />
+          <option value="mripoti_tapeli.models.phonenumber_field" />
+          <option value="mripoti.models.Stakeholders.is_valid" />
+          <option value="mripoti.models.Stakeholders.data" />
+          <option value="mripoti.settings.SETTINGS_PATH" />
+          <option value="urllib2" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
